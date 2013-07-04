@@ -1,4 +1,4 @@
-package com.sdjxd.elecsysa.activity;
+package com.sdjxd.elecsys.activity;
 
 import com.sdjxd.elecsys.R;
 
@@ -15,11 +15,11 @@ public class MainActivity extends Activity
 	private TextView usn=null,pwd=null;
 	private EditText editUsn=null,editPwd=null;
 	private Button login=null,setting=null;
-	protected void onCreate(Bundle savedInstanceState)
+	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
 		findById();
+		setContentView(R.layout.main);
 		login.setText(R.string.login);
 		setting.setText(R.string.setting);
 	}
